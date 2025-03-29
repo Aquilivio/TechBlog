@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Detalhe - TechBlog</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link id="theme-style" rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">TechBlog</div>
+      <div class="slogan">O seu portal de tecnologia e inovação</div>
+    </header>
+
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Menu</div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Tecnologia</a></li>
+          <li><a href="#">Programação</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><button id="theme-toggle">Modo Escuro</button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container post-container">
+      <main>
+        <article class="full-article">
+          <img src="images/ia.png" alt="Tecnologia" class="article-img" />
+          <div class="article-content">
+            <div class="article-meta">
+              <span class="article-date">15 de Maio, 2023</span>
+              <span class="article-category">Inteligência Artificial</span>
+            </div>
+            <h1 class="article-title">
+              O Futuro da IA: Como os Chatbots Estão Revolucionando o
+              Atendimento
+            </h1>
+
+            <div class="article-body">
+              <p>
+                A inteligência artificial está transformando radicalmente a
+                forma como interagimos com a tecnologia. Nos últimos anos, os
+                chatbots evoluíram de simples scripts de respostas
+                pré-programadas para sistemas complexos capazes de entender
+                contexto, emoção e até mesmo humor.
+              </p>
+
+              <h2>O Avanço dos Chatbots</h2>
+              <p>
+                Com a chegada de modelos como GPT-3 e GPT-4, os chatbots
+                atingiram um nível de sofisticação impressionante. Eles agora
+                podem:
+              </p>
+              <ul>
+                <li>Manter conversas coerentes por longos períodos</li>
+                <li>Resolver problemas complexos de atendimento ao cliente</li>
+                <li>
+                  Aprender com cada interação para melhorar seu desempenho
+                </li>
+                <li>Adaptar o tom da conversa de acordo com o usuário</li>
+              </ul>
+
+              <h2>Impacto no Atendimento ao Cliente</h2>
+              <p>
+                Empresas líderes em diversos setores já estão utilizando
+                chatbots avançados para:
+              </p>
+              <ol>
+                <li>Reduzir custos com call centers</li>
+                <li>Oferecer atendimento 24/7</li>
+                <li>Personalizar a experiência do cliente</li>
+                <li>
+                  Coletar dados valiosos sobre preferências e comportamentos
+                </li>
+              </ol>
+
+              <h2>O Que Esperar para o Futuro</h2>
+              <p>Nos próximos anos, podemos antecipar:</p>
+              <div class="highlight-box">
+                <p>
+                  Chatbots que não apenas respondem perguntas, mas antecipam
+                  necessidades e oferecem soluções proativas, integrados com IoT
+                  para um atendimento verdadeiramente contextual.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <section class="comments-section">
+          <h2>Comentários</h2>
+          <div class="comments-list" id="comments-list">
+            <!-- Comentários serão carregados aqui via JavaScript -->
+          </div>
+
+          <form class="comment-form" id="comment-form">
+            <h3>Deixe seu comentário</h3>
+            <div class="form-group">
+              <label for="comment-name">Nome:</label>
+              <input type="text" id="comment-name" required />
+            </div>
+            <div class="form-group">
+              <label for="comment-email">Email (não será publicado):</label>
+              <input type="email" id="comment-email" required />
+            </div>
+            <div class="form-group">
+              <label for="comment-text">Comentário:</label>
+              <textarea id="comment-text" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="newsletter-btn">
+              Enviar Comentário
+            </button>
+          </form>
+        </section>
+      </main>
+
+      <aside>
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Sobre o Autor</h3>
+          <div class="author-bio">
+            <img
+              src="https://source.unsplash.com/random/100x100/?portrait"
+              alt="Aquilivio Maria"
+              class="author-img"
+            />
+            <p>
+              <strong>Aquilivio Maria</strong> é estudante de Engenharia
+              Informática e apaixonado por tecnologia. Escreve sobre IA,
+              desenvolvimento web e inovações tecnológicas.
+            </p>
+            <a
+              href="about.html"
+              class="read-more"
+              style="margin-top: 10px; display: inline-block"
+              >Ver perfil completo</a
+            >
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Posts Relacionados</h3>
+          <ul class="popular-posts">
+            <li class="popular-post">
+              <img
+                src="https://source.unsplash.com/random/100x80/?ai"
+                alt="Post 1"
+                class="popular-post-img"
+              />
+              <div>
+                <h4 class="popular-post-title">
+                  Ética na Inteligência Artificial
+                </h4>
+                <span class="popular-post-date">22 de Abril, 2023</span>
+              </div>
+            </li>
+            <li class="popular-post">
+              <img
+                src="https://source.unsplash.com/random/100x80/?chatbot"
+                alt="Post 2"
+                class="popular-post-img"
+              />
+              <div>
+                <h4 class="popular-post-title">
+                  Como Implementar um Chatbot em Seu Site
+                </h4>
+                <span class="popular-post-date">10 de Março, 2023</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Newsletter</h3>
+          <p>
+            Assine nossa newsletter e receba as últimas notícias diretamente no
+            seu e-mail.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="text"
+              placeholder="Seu nome"
+              class="newsletter-input"
+            />
+            <input
+              type="email"
+              placeholder="Seu e-mail"
+              class="newsletter-input"
+            />
+            <button type="submit" class="newsletter-btn">Assinar</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="logo">TechBlog</div>
+      <ul class="footer-links">
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#" class="social-icon"
+          ><img src="images/whatsapp.png" alt="WhatsApp"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="images/github.png" alt="WhatsApp"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="images/linkedin.png" alt="WhatsApp"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="images/gmail.png" alt="WhatsApp"
+        /></a>
+      </div>
+      <p>&copy; 2025 TechBlog. Criado por Aquilivio Maria.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/comments.js"></script>
+  </body>
+</html>
